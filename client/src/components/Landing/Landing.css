@@ -1,0 +1,49 @@
+.landing {
+  width: 100%;
+  height: 98vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  background-color: rgb(236, 245, 244);
+}
+
+.container {
+  width: 70%;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.landing-btn {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.login-btn {
+  background-color: transparent;
+  border: 1px solid rgb(46, 147, 230);
+  cursor: pointer;
+  color: rgb(46, 147, 230);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 0; /*IMPORTANT FOR THIS TO WORK*/
+}
+
+.login-btn:hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(221, 221, 221, 0.568);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.goBack {
+  margin: 20px;
+}

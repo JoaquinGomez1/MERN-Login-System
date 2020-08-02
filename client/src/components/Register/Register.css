@@ -1,0 +1,70 @@
+.register-component {
+  background-color: rgb(236, 245, 244);
+}
+
+.register-container {
+  font-family: sans-serif;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+form {
+  width: 100%;
+  min-width: 350px;
+  max-width: 350px;
+}
+
+.register-container > form > div {
+  display: grid;
+}
+
+.group {
+  margin-bottom: 30px;
+}
+
+.group > p {
+  display: none;
+}
+
+.group > input,
+select {
+  margin: 5px 0;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 10px 5px;
+}
+
+input::placeholder {
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.4;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid rgb(46, 147, 230);
+}
+
+.password-group > label {
+  margin-top: 20px;
+}
+
+.register-btn {
+  background-color: rgb(46, 147, 230);
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none !important;
+}
+
+.register-btn:hover {
+  background-color: rgb(35, 133, 212);
+  cursor: pointer;
+}
+
+.error-field {
+  color: rgb(230, 41, 113);
+  font-weight: bold;
+}
