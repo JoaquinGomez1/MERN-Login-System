@@ -18,14 +18,9 @@ app.use(
 app.use(bodyParser.json());
 
 // --------------------------- Routes ---------------------------
-
-// ---------------- REGISTER ----------------
-
 app.use(register);
-
-// ---------------- LOGIN ----------------
-
 app.use(login);
+
 // --------------------------- Listen server ---------------------------
 app.listen(port, () => {
   console.log(`Server started on ${port} \nhttp://localhost:3001\n`);
